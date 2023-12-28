@@ -62,6 +62,7 @@ const CreateTextAdForm = () => {
                           value={textAdData.heading1}
                           name="heading1"
                           onChange={handleChange}
+                          required
                         />
                       </Form.Group>
                       <Form.Group controlId="heading2">
@@ -72,6 +73,7 @@ const CreateTextAdForm = () => {
                           value={textAdData.heading2}
                           name="heading2"
                           onChange={handleChange}
+                          required
                         />
                       </Form.Group>
                     </Col>
@@ -82,6 +84,7 @@ const CreateTextAdForm = () => {
                         className="textArea"
                           as="textarea"
                           type="text"
+                          required
                           name="description"
                           value={textAdData.description}
                           onChange={handleChange}
@@ -100,12 +103,12 @@ const CreateTextAdForm = () => {
                         name="businessName"
                         value={textAdData.businessName}
                         onChange={handleChange}
+                        required
                       />
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="buttonLabel">
                       <Form.Label>Button Label</Form.Label>
-
                       <Form.Select>
                         <option>Select a label that best suits your ad</option>
                         <option value="1" onChange={handleChange}>
@@ -130,6 +133,7 @@ const CreateTextAdForm = () => {
                         name="url"
                         value={textAdData.url}
                         onChange={handleChange}
+                        required
                       />
                     </Form.Group>
                   </Row>

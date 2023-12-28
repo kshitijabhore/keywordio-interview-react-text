@@ -66,6 +66,7 @@ const CreateMediaAdForm = () => {
                           name="heading1"
                           value={mediaAdData.heading1}
                           onChange={handleChange}
+                          required
                         />
                       </Form.Group>
                       <Form.Group controlId="heading2">
@@ -76,6 +77,7 @@ const CreateMediaAdForm = () => {
                           name="heading2"
                           value={mediaAdData.heading2}
                           onChange={handleChange}
+                          required
                         />
                       </Form.Group>
                     </Col>
@@ -89,6 +91,7 @@ const CreateMediaAdForm = () => {
                           name="description"
                           value={mediaAdData.description}
                           onChange={handleChange}
+                          required
                           placeholder="Add primary text to help user understand more about your products, services or offers."
                         />
                       </Form.Group>
@@ -104,6 +107,7 @@ const CreateMediaAdForm = () => {
                         name="landScapeImg"
                         value={mediaAdData.landScapeImg}
                         onChange={handleChange}
+                        required
                       />
                     </Form.Group>
                     <Form.Group as={Col} controlId="portraitImg">
@@ -114,6 +118,7 @@ const CreateMediaAdForm = () => {
                         onChange={handleChange}
                         placeholder="Add URL of image that you want to use for the ad"
                         name="portraitImg"
+                        required
                       />
                     </Form.Group>
                     <Form.Group as={Col} controlId="squareImg">
@@ -124,6 +129,7 @@ const CreateMediaAdForm = () => {
                         name="squareImg"
                         value={mediaAdData.squareImg}
                         onChange={handleChange}
+                        required
                       />
                     </Form.Group>
                   </Row>
@@ -136,6 +142,7 @@ const CreateMediaAdForm = () => {
                         name="url"
                         value={mediaAdData.url}
                         onChange={handleChange}
+                        required
                       />
                     </Form.Group>
                   </Row>
@@ -148,6 +155,7 @@ const CreateMediaAdForm = () => {
                         name="businessName"
                         value={mediaAdData.businessName}
                         onChange={handleChange}
+                        required
                       />
                     </Form.Group>
 
@@ -177,6 +185,7 @@ const CreateMediaAdForm = () => {
                         name="WebsiteUrl"
                         value={mediaAdData.WebsiteUrl}
                         onChange={handleChange}
+                        required
                       />
                     </Form.Group>
                   </Row>
