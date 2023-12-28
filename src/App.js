@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import PageLayout from "./Component/PageLayout";
+import CreateAdPage from "./Component/CreateAdPage";
+import CreateTextAdForm from "./Component/CreateTextAdForm";
+import CreateMediaAdForm from "./Component/CreateMediaAdForm";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<PageLayout />}></Route>
+          <Route exact path="/createAdPage" element={<CreateAdPage />}></Route>
+          <Route
+            exact
+            path="/createTextAdForm"
+            element={<CreateTextAdForm />}
+          ></Route>
+          <Route
+            exact
+            path="/createMediaAdForm"
+            element={<CreateMediaAdForm />}
+          ></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

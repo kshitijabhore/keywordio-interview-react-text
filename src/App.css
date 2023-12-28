@@ -36,3 +36,151 @@
     transform: rotate(360deg);
   }
 }
+
+.row .navBar{
+margin-bottom: 2rem;
+padding: 0;
+}
+
+.tableArrowWrapper {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  .material-symbols-outlined {
+    font-size: 15px;
+    line-height: 0.5;
+    color: gray;
+  }
+  .blackArrow {
+    color: black;
+  }
+}
+
+
+
+.tableTitleWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tableItemRightAlign {
+  justify-content: flex-end;
+}
+
+.tableTextAlignLeft {
+  text-align: left;
+}
+
+#chartCard {
+  height: 23rem;
+  display: flex;
+  justify-content: space-between;
+  .form-check-input {
+    background-image: url("../public/donut_chart_svg.svg");
+    font-size: x-large;
+  }
+  .form-check-input:checked {
+    background-image: url("../public/table_chart_svg.svg");
+    font-size: x-large;
+    background-color: #cee1fd;
+  }
+}
+
+.chartHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: end;
+}
+
+#textAdSelectCard {
+  width: 15rem;
+  margin-right: 2em;
+}
+
+#mediaAdSelectCard {
+  width: 15rem;
+}
+
+.selectionCardImg {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.selectionCardCheckbox {
+  display: flex;
+  padding: 0.2rem;
+}
+
+.selectionCardWrapperCard {
+  height: 30em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectionCardWrapperCardText{
+  text-align: left;
+  flex: 0;
+}
+
+.selectionCard{
+  display: flex;
+   justify-content: center;
+   align-items:center
+}
+
+.createAdNextWrapper {
+  display: flex;
+  justify-content: right;
+  padding: 2em;
+}
+
+.checkIcon{
+  border: 1px solid;
+  border-radius: 15px;
+  background-color: blue;
+  color: white;
+}
+
+.container-fluid .onSubmitPopPup{
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  z-index: 1;
+  width: 18rem
+}
+
+.opacity-10 {
+  opacity: 10%;
+}
+
+.formTextAlign{
+  text-align: left;
+}
+
+.formButton{
+  display: flex;
+  justify-content: end;
+  padding-top: 2em;
+}
+
+.textArea{
+  height: 107px;
+}
+
+.tableStyle{
+  margin-bottom:0px;
+  text-align: right;
+}
+
+.tableGroupCell{
+  text-align: left;
+}
+
+.errMessage{
+  color: red;
+}
